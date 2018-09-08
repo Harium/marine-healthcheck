@@ -12,5 +12,10 @@ Web module to check server status
 
 ## Usage
 ```
+Web.register(HealthCare.class);
+```
+
+Then, access health route via GET:
+```
 http://localhost:8080/health
 ```
