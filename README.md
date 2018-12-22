@@ -11,6 +11,12 @@ Web module to check server status
 ```
 
 ## Usage
+Using raw [SparkJava](http://sparkjava.com/)
+```
+new HealthCare().init();
+```
+
+Using [Harium Web](https://github.com/Harium/web)
 ```
 Web.register(HealthCare.class);
 ```
