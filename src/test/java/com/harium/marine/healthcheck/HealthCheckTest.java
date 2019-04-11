@@ -1,21 +1,20 @@
-package com.harium.web.healthcare;
+package com.harium.marine.healthcheck;
 
-import com.harium.web.healthcare.model.CPUStatus;
-import com.harium.web.healthcare.model.ClockStatus;
-import com.harium.web.healthcare.model.DiskStatus;
-import com.harium.web.healthcare.model.MemoryStatus;
-import com.harium.web.json.Json;
+import com.harium.marine.healthcheck.model.CPUStatus;
+import com.harium.marine.healthcheck.model.ClockStatus;
+import com.harium.marine.healthcheck.model.DiskStatus;
+import com.harium.marine.healthcheck.model.MemoryStatus;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class HealthCareTest {
+public class HealthCheckTest {
 
-    private HealthCare service;
+    private HealthCheck service;
 
     @Before
     public void setUp() {
-        service = new HealthCare();
+        service = new HealthCheck();
     }
 
     @Test

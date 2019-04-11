@@ -1,11 +1,11 @@
-package com.harium.web.healthcare;
+package com.harium.marine.healthcheck;
 
 /**
  * A service to report server status
  */
 
-import com.harium.web.model.WebModule;
-import com.harium.web.healthcare.model.*;
+import com.harium.marine.healthcheck.model.*;
+import com.harium.marine.model.WebModule;
 import com.sun.management.OperatingSystemMXBean;
 import spark.Request;
 
@@ -16,7 +16,7 @@ import java.util.Map;
 import static spark.Spark.get;
 import static spark.Spark.path;
 
-public class HealthCare implements WebModule {
+public class HealthCheck implements WebModule {
 
     private static final float MB = (float) 1 / (1024 * 1024);
     private static final float GB = MB / 1024;

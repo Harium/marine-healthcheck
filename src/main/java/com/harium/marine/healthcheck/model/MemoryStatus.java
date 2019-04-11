@@ -1,9 +1,9 @@
-package com.harium.web.healthcare.model;
+package com.harium.marine.healthcheck.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import com.harium.web.json.Json;
-import com.harium.web.model.ResponseModel;
+import com.harium.marine.json.Json;
+import com.harium.marine.model.ResponseModel;
 
 public class MemoryStatus implements ResponseModel {
 

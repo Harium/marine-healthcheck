@@ -3,17 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.harium.web</groupId>
-    <artifactId>healthcare</artifactId>
+    <groupId>com.harium.marine</groupId>
+    <artifactId>healthcheck</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>Server Status Service</name>
-    <description>Web's Server Status Service</description>
-    <url>http://github.com/harium/web-healthcare</url>
+    <description>Marine's Server Status Service</description>
+    <url>http://github.com/harium/marine-healthcheck</url>
     <scm>
-        <connection>scm:git:git://github.com/harium/web-healthcare.git</connection>
-        <developerConnection>scm:git:ssh://github.com:harium/web-healthcare.git</developerConnection>
-        <url>http://github.com/harium/web-healthcare/tree/master</url>
+        <connection>scm:git:git://github.com/harium/marine-healthcheck.git</connection>
+        <developerConnection>scm:git:ssh://github.com:harium/marine-healthcheck.git</developerConnection>
+        <url>http://github.com/harium/marine-healthcheck/tree/master</url>
     </scm>
     <licenses>
         <license>
@@ -23,12 +23,12 @@
     </licenses>
     <dependencies>
         <dependency>
-            <groupId>com.harium.web</groupId>
+            <groupId>com.harium.marine</groupId>
             <artifactId>core</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
-            <groupId>com.harium.web</groupId>
+            <groupId>com.harium.marine</groupId>
             <artifactId>json</artifactId>
             <version>1.0.0</version>
         </dependency>
@@ -71,6 +71,9 @@
                     <source>1.8</source>
                     <target>1.8</target>
                     <optimize>true</optimize>
+                    <excludes>
+                        <exclude>**/examples/*</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
             <plugin>

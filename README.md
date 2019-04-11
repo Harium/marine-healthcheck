@@ -1,11 +1,12 @@
 # web-healthcare
-Web module to check server status
+Web module to check server status.
+It creates a "/health" route in your server if status
 
 ## Maven
 ```
 <dependency>
-    <groupId>com.harium.web</groupId>
-    <artifactId>healthcare</artifactId>
+    <groupId>com.harium.marine</groupId>
+    <artifactId>healthcheck</artifactId>
     <version>1.0.0</version>
 </dependency>
 ```
@@ -13,15 +14,15 @@ Web module to check server status
 ## Usage
 Using raw [SparkJava](http://sparkjava.com/)
 ```
-new HealthCare().init();
+new HealthCheck().init();
 ```
 
 Using [Harium Web](https://github.com/Harium/web)
 ```
-Web.register(HealthCare.class);
+Web.register(HealthCheck.class);
 ```
 
-Then, access health route via GET:
+Then, access /health route via GET:
 ```
 http://localhost:8080/health
 ```
