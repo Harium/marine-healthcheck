@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.harium.marine</groupId>
     <artifactId>healthcheck</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <packaging>jar</packaging>
-    <name>Server Status Service</name>
-    <description>Marine's Server Status Service</description>
+    <name>Marine's Health Check Service</name>
+    <description>Marine's Health Check Service</description>
     <url>http://github.com/harium/marine-healthcheck</url>
     <scm>
         <connection>scm:git:git://github.com/harium/marine-healthcheck.git</connection>
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>com.harium.marine</groupId>
             <artifactId>core</artifactId>
-            <version>1.0.0</version>
+            <version>1.1.0</version>
         </dependency>
         <dependency>
             <groupId>com.harium.marine</groupId>

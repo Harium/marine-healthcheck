@@ -1,9 +1,8 @@
 package examples;
 
-import com.harium.marine.Marine;
+import com.harium.marine.Web;
 import com.harium.marine.healthcheck.HealthCheck;
-
-import java.awt.*;
+import java.awt.Desktop;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -16,18 +15,18 @@ public class HelloWorld {
         String host = "localhost";
         int port = 8081;
 
-        Marine.port(port);
-        Marine.host(host);
+        Web.port(port);
+        Web.host(host);
 
         String url = "http://" + host + ":" + port + "/health";
         System.out.println("Check server status: " + url);
 
-        Marine.staticFileLocation("/public");
+        Web.staticFileLocation("/public");
 
         // Register Web Modules
-        Marine.register(HealthCheck.class);
+        Web.register(HealthCheck.class);
         // Init Web Modules
-        Marine.init();
+        Web.init();
 
         // Open browser to show the status
         openBrowser(url);

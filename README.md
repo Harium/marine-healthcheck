@@ -7,7 +7,7 @@ It creates a "/health" route in your server if status
 <dependency>
     <groupId>com.harium.marine</groupId>
     <artifactId>healthcheck</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
 </dependency>
 ```
 
